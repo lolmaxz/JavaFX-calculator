@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.168" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="535.0" prefWidth="433.0" xmlns="http://javafx.com/javafx/17.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.calculator.calculatriceControlleur">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="108.0" prefWidth="598.0">
+         <children>
+            <TextField fx:id="textResultat" alignment="CENTER_RIGHT" layoutX="-3.0" prefHeight="90.0" prefWidth="450.0" text="0">
+               <font>
+                  <Font name="Arial" size="38.0" />
+               </font>
+            </TextField>
+         </children></AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="121.0" prefWidth="598.0" style="-fx-background-color: #c0c0c0;">
+         <children>
+            <Button fx:id="btn_calcul_reset" layoutX="12.0" layoutY="30.0" mnemonicParsing="false" onAction="#press_btn" prefHeight="57.0" prefWidth="54.0" text="C">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_nbr_7" layoutX="12.0" layoutY="110.0" mnemonicParsing="false" onAction="#press_btn" prefHeight="57.0" prefWidth="54.0" text="7">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_nbr_4" layoutX="12.0" layoutY="192.0" mnemonicParsing="false" onAction="#press_btn" prefHeight="57.0" prefWidth="54.0" text="4">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_nbr_1" layoutX="12.0" layoutY="278.0" mnemonicParsing="false" onAction="#press_btn" prefHeight="57.0" prefWidth="54.0" text="1">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_nbr_0" layoutX="12.0" layoutY="360.0" mnemonicParsing="false" onAction="#press_btn" prefHeight="57.0" prefWidth="125.0" text="0">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="82.0" layoutY="30.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="54.0" text="e^x">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_nbr_8" layoutX="82.0" layoutY="110.0" mnemonicParsing="false" onAction="#press_btn" prefHeight="57.0" prefWidth="54.0" text="8">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_nbr_5" layoutX="82.0" layoutY="192.0" mnemonicParsing="false" onAction="#press_btn" prefHeight="57.0" prefWidth="54.0" text="5">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_nbr_2" layoutX="82.0" layoutY="278.0" mnemonicParsing="false" onAction="#press_btn" prefHeight="57.0" prefWidth="54.0" text="2">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="147.0" layoutY="30.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="54.0" text="√">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_nbr_9" layoutX="147.0" layoutY="110.0" mnemonicParsing="false" onAction="#press_btn" prefHeight="57.0" prefWidth="54.0" text="9">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_nbr_6" layoutX="147.0" layoutY="192.0" mnemonicParsing="false" onAction="#press_btn" prefHeight="57.0" prefWidth="54.0" text="6">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_nbr_3" layoutX="147.0" layoutY="278.0" mnemonicParsing="false" onAction="#press_btn" prefHeight="57.0" prefWidth="54.0" text="3">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_operation_plus" layoutX="219.0" layoutY="30.0" mnemonicParsing="false" onAction="#press_btn" prefHeight="57.0" prefWidth="54.0" text="+">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_operation_moins" layoutX="219.0" layoutY="110.0" mnemonicParsing="false" onAction="#press_btn" prefHeight="57.0" prefWidth="54.0" text="-">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_operation_multiplier" layoutX="219.0" layoutY="192.0" mnemonicParsing="false" onAction="#press_btn" prefHeight="57.0" prefWidth="54.0" text="*">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_operation_diviser" layoutX="219.0" layoutY="278.0" mnemonicParsing="false" onAction="#press_btn" prefHeight="57.0" prefWidth="54.0" text="/">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="295.0" layoutY="30.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="53.0" text="Log">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="295.0" layoutY="110.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="53.0" text="In">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="295.0" layoutY="192.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="53.0" text="x^y">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="295.0" layoutY="278.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="53.0" text="x^2">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="363.0" layoutY="30.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="53.0" text="Sin">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="363.0" layoutY="110.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="53.0" text="Cos">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="363.0" layoutY="192.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="53.0" text="Tan">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="363.0" layoutY="278.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="53.0" text="Mod">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_calcul_point" layoutX="147.0" layoutY="360.0" mnemonicParsing="false" onAction="#press_btn" prefHeight="57.0" prefWidth="53.0" text=".">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_calcul_egale" layoutX="219.0" layoutY="360.0" mnemonicParsing="false" onAction="#press_btn" prefHeight="57.0" prefWidth="54.0" text="=">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="295.0" layoutY="360.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="53.0" text="x^3">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="363.0" layoutY="360.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="53.0" text="x!">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </items>
+</SplitPane>
